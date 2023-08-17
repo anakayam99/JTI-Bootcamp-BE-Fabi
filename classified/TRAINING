@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pegadaian Lempuyangan Daily Tracker</title>
+    <style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			text-align: center;
+			margin: 50px 0 30px;
+			color: #262626;
+			font-size: 32px;
+		}
+
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+		}
+
+		form p {
+			margin: 15px 0;
+			font-weight: bold;
+			color: #262626;
+		}
+
+		label {
+			margin-right: 10px;
+		}
+
+		input[type="radio"] {
+			margin-right: 20px; 
+		}
+
+		input[type="text"], input[type="date"], textarea {
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			font-size: 16px;
+		}
+
+		textarea {
+			height: 300px; width:400px;
+		}
+
+		button[type="submit"] {
+			background-color: #262626;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #555;
+		}
+	</style>
+
+  <body>
+    <h1> Pegadaian Lempuyangan Daily Tracker</h1>
+    <form>
+        <p>Kode Outlet</p>
+        <label for="13535">13535</label>
+        <input type="radio" id="13535" name="Kode Outlet">
+        <label for="13536">13536</label>
+        <input type="radio" id="13536" name="Kode Outlet">
+        <label for="13537">13537</label>
+        <input type="radio" id="13537" name="Kode Outlet">
+        <label for="13539">13539</label>
+        <input type="radio" id="13539" name="Kode Outlet">
+        <label for="13669">13669</label>
+        <input type="radio" id="13669" name="Kode Outlet">
+        <label for="13670">13670</label>
+        <input type="radio" id="13670" name="Kode Outlet">
+        <label for="13671">13671</label>
+        <input type="radio" id="13671" name="Kode Outlet">
+        <br>
+        <p>Tanggal Input</p>
+        <label for="tanggalinput"></label>
+        <input type="date" id="tanggalinput"> 
+        <br>
+        <p>Closing Mulia Hari Ini</p>
+        <label for="mulia"></label>
+        <input type="text" id="mulia" placeholder="gram">
+        <br>
+        <p>Aktivasi dan Transaksi PDS</p>
+        <label for="pds"></label>
+        <input type="text" id="pds">
+        <br>
+        <p>Pembukaan Simpedes UMi</p>
+        <label for="umi"></label>
+        <input type="text" id="umi">
+        <br>
+        <p>Debitur Digital UMi Corner<br>(Pembukaan Tabungan Emas / Gadai via Aplikasi Senyum)</p>
+        <label for="debdigumi"></label>
+        <input type="text" id="debdigumi">
+        <br>
+        <P>Keterangan</P>
+        <input type="textarea">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+  </body>

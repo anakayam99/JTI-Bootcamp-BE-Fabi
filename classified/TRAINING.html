@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>Pegadaian Lempuyangan Daily Tracker</title>
+    <style>
+
+		body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ecf0f3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+    font-family: poppins;
+		}
+
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            opacity: 96%;
+		}
+
+		form p {
+			margin: 15px 0;
+			font-weight: bold;
+			color: #262626;
+		}
+
+		label {
+			margin-right: 10px;
+		}
+
+		input[type="radio"] {
+            display:inline  ;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 50px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+		}
+
+		input[type="text"], input[type="date"] {
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			border-radius: 3px; 
+			font-size: 16px;
+            cursor: pointer;
+            box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;      
+		}
+
+		button[type="submit"] {
+			background-color: green;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #555;
+		}
+
+        footer{text-align: center;
+			margin: 50px 0 30px;
+			color: #262626;
+			font-size: 15px;}
+
+    .popup{
+      width: 400px;
+      background: #ffff ;
+      border-radius: 6px;
+      position:absolute;
+      top:0;
+      left: 50%;
+      transform: translate(-50%,-50%) scale(0.1);
+      text-align: center;
+      padding: 0,30px,30px;
+      color: #333;
+      visibility: hidden;
+      transition: transform 0.4s, top 0.4s, ;
+
+    }
+    .open-popup{
+      visibility: visible;
+      top: 50%;
+      transform:translate(-50%,-50%) scale(1); ;
+    }
+    .popup img{
+      width: 100px;
+      margin-top: -50px;
+      border-radius: 50%;
+      box-shadow: 0,2px, 5px, rgba(red,green,blue,alpha);
+    }
+    .popup h2{
+      font-size: 38px;
+      font-weight: 500;
+      margin: 30px 0 10px;
+    }
+    input {
+  caret-color: red;
+  }
+    .popup button{
+      width: 100%;
+      margin-top: 50px;
+      padding: 10px 0;
+      background: #6fd649;
+      color: #fff;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0,5px,5px rgba(0,0,0,0.2);
+       
+    }
+    .logo{
+  height: 100px;
+  width: 100px;
+  background-image: url("pgdd\ lempuu.png");
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+    .fot2{
+      margin-top : 1px
+    }
+
+	</style>
+
+  <body>
+    <div class="container">
+    <form>
+        <div class="logo"></div>
+       <h1>Pegadaian Lempuyangan Daily Tracker</h1>
+        <p>Kode Outlet</p>
+        <input type="radio" id="13535" name="Kode Outlet" value="13535">
+        <label for="13535">13535</label>
+        <input type="radio" id="13536" name="Kode Outlet" value="13536">
+        <label for="13536">13536</label>
+        <input type="radio" id="13537" name="Kode Outlet"value="13537">
+        <label for="13537">13537</label>
+        <input type="radio" id="13539" name="Kode Outlet"value="13539">
+        <label for="13539">13539</label>
+        <input type="radio" id="13669" name="Kode Outlet"value="13669">
+        <label for="13669">13669</label>
+        <input type="radio" id="13670" name="Kode Outlet"value="13670">
+        <label for="13670">13670</label>
+        <input type="radio" id="13671" name="Kode Outlet"value="13671">
+        <label for="13671">13671</label>
+        <br>
+        <p>Tanggal Input</p>
+        <label for="tanggalinput"></label>
+        <input type="date" id="tanggalinput"> 
+        <br>
+        <p>Closing Mulia Hari Ini</p>
+        <label for="mulia"></label>
+        <input type="text" id="mulia" placeholder="gram">
+        <br>
+        <p>Aktivasi dan Transaksi PDS</p>
+        <label for="pds"></label>
+        <input type="text" id="pds">
+        <br>
+        <p>Pembukaan Simpedes UMi</p>
+        <label for="umi"></label>
+        <input type="text" id="umi">
+        <br>
+        <p>Debitur Digital UMi Corner<br>(Pembukaan Tabungan Emas / Gadai via Aplikasi Senyum)</p>
+        <label for="debdigumi"></label>
+        <input type="text" id="debdigumi">
+        <p>Closing Mikro (Rupiah) </p>
+        <label for="mikro"></label>
+        <input type="text" id="mikro">
+        <br>
+        <P>Aktivitas Pemasaran yang dilakukan</P>
+        <input type="text">
+        <br>
+        <button type="submit"class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+          <img src="checked.png">
+          <h2>Form telah tersubmit!</h2>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>    </form>
+
+  </body>
+  <footer><p>	&#169;  Pegadaian Lempuyangan 2023</p> <br> <div class ="fot2"> <p> Tidak untuk disebarluaskan</p> </div> </footer>

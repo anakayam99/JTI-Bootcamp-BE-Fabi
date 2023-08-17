@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <title>Pegadaian Lempuyangan Marketing Database</title>
+    <style> 
+          body {
+       margin: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #ecf0f3;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      place-items: center;
+      overflow: hidden;
+      font-family: sans-serif
+      }
+
+      .container{
+        box-shadow:#cbced1
+      }
+
+  
+
+      input[type="text"], input[type="date"] {
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			border-radius: 3px; 
+			font-size: 16px;
+            cursor: pointer;
+            box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;   
+      }
+
+      button[type="submit"] {
+			background-color: green;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #555;
+      }
+
+      @media (max-width: 650px) {
+  .body {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .main_form {
+    flex-direction: column;
+    gap: 20px;
+  }}
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1> Pegadaian Lempuyangan <br> Marketing Database Input</h1>
+<div class="main_form">
+    <div class="tanggal_input"> 
+    <label for="date">Tanggal Input</label> </div>
+    <input type="date" id="date">
+    <br>
+    <label for="marketer">Marketer</label>
+    <input type="text" id="marketer">
+    <br>
+    <label for="nama_tempat">Nama Tempat</label>
+    <input type="text" id="nama_tempat">
+    <br>
+    <label for="address">Alamat</label>
+    <input type="text" id="address">
+    <br>
+    <label for="phone">Nomor Telfon</label>
+    <input type="text" id="phone">
+    <br>
+    <button type="submit"> Submit</button> </div>
+</div>
+
+</body>
